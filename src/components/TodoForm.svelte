@@ -1,7 +1,10 @@
 <script>
     let todo = '';
+    import {addTodos} from '../stores/todoStore'
     const handleSubmit = (e)=>{
         console.log("submited")
+        addTodos(todo)
+        todo = '';
     }
 
 </script>
