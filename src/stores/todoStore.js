@@ -10,11 +10,10 @@ export const addTodos = (text)=>{
     })
 }
 
-export const deleteTodos = (id)=>{
-    todos.update((todos)=>{
-        todos.update(todos=>todos.filter((todo)=>todo.id != id))        
-    })
+export const deleteTodos = (id) => {
+    todos.update((todos) => todos.filter((todo) => todo.id != id));
 }
+
 
 export const toggleTodoCompleted =(id)=>{
     todos.update(todos=>{
